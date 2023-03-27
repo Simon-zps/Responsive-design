@@ -38,8 +38,15 @@ body{
 .corner{
     height: 10vh;
     padding: 3rem;
-    
+    display: flex;
+    justify-content: space-between;
 }
+.mode:hover{
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
 
 .content{
     width: 100%;
@@ -72,7 +79,7 @@ body{
     margin-top: 2rem;
     padding: 1rem;
     background-color: #333333;
-    color: #fff;
+    color: #ffffff;
     border:none;
 }
 
