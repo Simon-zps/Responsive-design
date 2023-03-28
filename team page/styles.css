@@ -16,19 +16,24 @@ body{
     height: 100vh;
 }
 
+.header-wrap{
+    display: flex;
+    justify-content: center;
+}
+
 .header{
+    width: 69%;
     display: flex;
     padding: 4rem 1rem 1rem 1rem;
     margin-bottom: 2rem;
 }
 .title{
     font-weight: 600;
-    padding-left: 14.5rem;
     width: 50%;
 }
 
 .description{
-    margin-left: 10rem;
+    margin-left: 20rem;
     width: 50%;
 }
 
@@ -37,15 +42,14 @@ body{
 }
 
 .description p{ 
-    width: 50%;
+    width: 80%;
 }
 
-/* Second item in flexbox */
+/* Second item */
 
 .content{
-    margin-left: 25% auto;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .profiles{
@@ -57,13 +61,14 @@ body{
     grid-gap: 0;
 }
 
+
 .profiles > div:nth-child(2) {
-    margin-top: 50px; /* apply negative margin to the second column */
+    margin-top: 50px;
   }
 
-  .profiles > div:nth-child(5) {
-    margin-top: 50px; /* apply negative margin to the second column */
-  }
+.profiles > div:nth-child(5) {
+    margin-top: 50px;
+}
 
 .profile img{
     max-width: 200px;
