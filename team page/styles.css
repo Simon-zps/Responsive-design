@@ -26,8 +26,10 @@ body{
     display: flex;
     padding: 4rem 1rem 1rem 1rem;
     margin-bottom: 2rem;
+    
 }
 .title{
+
     font-weight: 600;
     width: 50%;
 }
@@ -50,28 +52,35 @@ body{
 .content{
     display: flex;
     justify-content: center;
+    
 }
 
 .profiles{
-    width: 80%;
+    width: 73%;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0;
+    
+}
+
+.profile{
+    padding: 2.8rem;
+    margin:1px;
 }
 
 
 .profiles > div:nth-child(2) {
-    margin-top: 50px;
+    margin-top: 4rem;
   }
 
 .profiles > div:nth-child(5) {
-    margin-top: 50px;
+    margin-top: 4rem;
 }
 
 .profile img{
-    max-width: 200px;
+    max-width: 100%;
 }
 
 /* footer */
@@ -82,4 +91,45 @@ body{
     align-items: center;
     height: 20vh;
     color: #333;
+}
+
+@media screen and (max-width: 1000px){
+    .header{
+        width: 90%;
+    }
+    .description{
+        margin-left: 5rem;
+        width: 70%;
+    }
+    .description h3{
+        margin-bottom: 0.7rem;
+    }
+    .description p{ 
+        width: 100%;
+    }
+
+
+    /* content */
+    .profiles{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .profile{
+        padding: 1rem;
+        
+        
+    }
+
+    .profiles > div:nth-child(5) {
+        margin-top: 0;
+    }
+    
+    .profiles > *:nth-child(2n):not(:first-child) {
+        margin-top: 2rem; /* Adjust the margin-top for the second column items */
+    }
+
+   
+
 }
