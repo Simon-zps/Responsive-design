@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    box-sizing: border-box;
+}
+:root{
+    --basic-color: #181719;
+}
+
+@font-face {
+    font-family: "SpaceMono";
+    src: url("fonts/webfontkit-20230326-130642/spacemono-regular-webfont.woff");
+}
+
+body{
+    font-size: 16px;
+    font-family: "SpaceMono";
+    background-color: var(--basic-color);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+.logo{
+    letter-spacing: 0.2rem;
+    padding: 0.4rem;
+    border: 1px solid #fff;
+    font-size: 0.55rem;
+}
+
+.header img{
+    max-width:60px;
+}
+/* EndOfHeader*/
+
+
+/* Hero */
+.hero {
+    padding: 1rem;
+    min-height: 85vh;
+}
+.hero img{
+    max-width: 100%;
+}
+
+
+.description h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.description p{
+    width: 65%;
+
+}
+
+.more{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px solid transparent;
+}
+
+.more:hover{
+    border-bottom-color: #fff;
+}
+
+.more img{
+    max-width: 20px;
+    margin-left: 1rem;
+}
+
+.hero-design{
+    position: relative;
+}
+
+.comment{
+    background-color: var(--basic-color);
+    box-shadow: 1px 1px 2px rgb(221, 186, 32);
+    padding: 0.3rem;
+    width: 70%;
+    position: absolute;
+    bottom:-3rem;
+    right: 1rem;
+}
+
+.comment-header{
+    display: flex;
+    align-items: center;
+}
+
+.author{
+    margin-left: 0.5rem;
+}
+
+.author h2{
+    color: #828282;
+}
+
+.comment-text{
+    padding: 0 1rem 1rem 1rem;
+}
+
+.comment img {
+    padding: 0.5rem;
+    border-radius: 50%;
+    max-width: 80px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    background-color: var(--basic-color);
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+}
