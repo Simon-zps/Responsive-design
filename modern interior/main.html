@@ -13,12 +13,28 @@
             <header class="header">
                 <div class="logo"><h1>THIS INTERIOR</h1></div>
 
+                <!-- Mobile -->
                 <button class="hamburger">
                     <img src="images/hamburger.svg">
                 </button>
                     
-                <!--For desktop-->
-                <nav class="navigation" style="display: none;">
+                <nav class="navigation">
+                    <button class="hamburger-close">
+                        <img src="images/hamburger.svg">
+                    </button>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Collections</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Mobile -->
+
+                <!-- Desktop -->
+                <nav class="desktop-navigation">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Collections</a></li>
@@ -26,6 +42,9 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
+                
+
+
             </header>
 
             <div class="hero">
@@ -37,14 +56,15 @@
                 </div>
 
                 <div class="hero-design">
-                    <img id="design-hero-img" src="images/design.png">
-
+                    <div class="landing">
+                        <img class="landing-image" src="images/design.png">
+                    </div>
                     <div class="comment">
                         <div class="comment-header">
-                            <img src="images/author.png">
+                            <img src="images/zalers.png">
                             <div class="author">
-                                <h3>Simon Krenich</h3>
-                                <p>Student, Pwr</p>
+                                <h3>Simon Student</h3>
+                                <p>Politechnika Wrocławska</p>
                             </div>
                         </div>
 
@@ -57,5 +77,43 @@
 
             <footer><p>responsive design 2023 </p></footer>
 
+
+        <script>
+            var hamburgerClicked = false;
+            var hamburger = document.querySelector(".hamburger");
+            var hamburgerClose = document.querySelector(".hamburger-close");
+            var navigation = document.querySelector(".navigation");
+
+            hamburger.addEventListener("click", function(){
+                if(hamburgerClicked == false){
+                    navigation.style.display = "block";
+                    hamburgerClicked = true;
+                }
+                else{
+                    navigation.style.display = "none";
+                    hamburgerClicked = false;
+                }
+            });
+            hamburgerClose.addEventListener("click", function(){
+                if(hamburgerClicked == false){
+                    navigation.style.display = "block";
+                    hamburgerClicked = true;
+                }
+                else{
+                    navigation.style.display = "none";
+                    hamburgerClicked = false;
+                }
+            });
+            
+            window.addEventListener("resize", function () {
+            if (window.innerWidth >= 1050) {
+                if (hamburgerClicked == true) {
+                    navigation.style.display = "none";
+                    hamburgerClicked = false;
+                }
+            }
+            });
+           
+        </script>
     </body>
 </html>
