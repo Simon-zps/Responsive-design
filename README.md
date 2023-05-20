@@ -1,1 +1,1 @@
-![Responsive Pages PNG](projects.png)
+![Responsive Pages PNG](group.png)
